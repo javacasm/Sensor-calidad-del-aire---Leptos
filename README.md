@@ -22,6 +22,8 @@
 
   ![](https://ae01.alicdn.com/kf/HTB1MSx0HpXXXXcIXVXXq6xXFXXX3/220667657/HTB1MSx0HpXXXXcIXVXXq6xXFXXX3.jpg?size=157456&height=750&width=1000&hash=430f15c763a3fbbfffd49bbbfc82cf10)
 
+  [Más detalle](./SHINYEI_PPD42.md)
+  
 * [BME280 temperatura-humedad-barómetro](https://es.aliexpress.com/item/1PCS-GY-BME280-3-3-precision-altimeter-atmospheric-pressure-BME280-sensor-module/32677515107.html?spm=2114.13010608.0.0.BrP51G&detailNewVersion=&categoryId=400103)
 
   [How to use BME280]([How to use BME280](https://www.adafruit.com/product/2652)
