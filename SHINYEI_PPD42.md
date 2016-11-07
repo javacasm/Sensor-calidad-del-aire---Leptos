@@ -101,3 +101,17 @@ Arduino UNO	Dust Sensor
         starttime = millis();
       }
     }
+
+
+The result above consists of three parts: lowpulseoccupancy, ratio and concentration.
+"lowpulseoccupancy" represents the Low Pulse Occupancy Time(LPO Time) detected in given 30s. Its unit is microseconds.
+"ratio" reflects on which level LPO Time takes up the whole sample time.
+"concentration" is a figure that has a physical meaning. It is calculated from the characteristic graph below by using the LPO time.
+
+![Characteristics.jpg ](http://wiki.seeedstudio.com/images/thumb/1/1f/Characteristics.jpg/600px-Characteristics.jpg)
+
+
+## Documentación
+
+[DataSheet](http://www.seeedstudio.com/wiki/images/4/4c/Grove_-_Dust_sensor.pdf)
+[Cómo funciona](http://takingspace.org/wp-content/uploads/ShinyeiPPD42NS_Deconstruction_TracyAllen.pdf)
