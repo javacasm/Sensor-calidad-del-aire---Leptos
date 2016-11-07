@@ -2,41 +2,38 @@
 
 [Dónde Comprarlo](https://es.aliexpress.com/item/SHINYEI-dust-sensor-PPD42NS-PPD4NS-PPD42NJ-dust-sensor-with-cable/32305336628.html?spm=2114.13010608.0.0.BrP51G&detailNewVersion=&categoryId=523)
 
-El valor de sensor se puede leer como  PWM (se puede leer como digital!! ) ([How to read PWM signal](http://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/))
+El valor de sensor se puede leer como  PWM (se puede leer desde un pin digital!! ) ([How to read PWM signal](http://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/))
 
 ![](https://ae01.alicdn.com/kf/HTB1MSx0HpXXXXcIXVXXq6xXFXXX3/220667657/HTB1MSx0HpXXXXcIXVXXq6xXFXXX3.jpg?size=157456&height=750&width=1000&hash=430f15c763a3fbbfffd49bbbfc82cf10)
 
 ## Descripción (de la página del vendedor)
 
-SHINYEI dust sensor PPD42NS PPD4NS PPD42NJ dust sensor with cable
+Características:
 
-Main features:
+1. Salida PWM
+2. Compacto y ligero
+3. Fácil de instalar
+4. Sólo necesita un tipo de alimentación
+5. Barato
 
-1. PWM mode output;
-2. compact, light weight;
-3. easy to install;
-4. a single power supply;
-5. low prices.
+Aplicaciones:
 
-Main applications:
+1. Purificadores de aire
+2. Aire acondicionados
+3. Instrumentos de medida de calidad del aire
 
-1. air purifiers and air cleaners;
-2. air-conditioning;
-3. air quality monitoring instrument;
-4. air conditioners and other related products.
 
-The main parameters:
+Datos a tener en cuenta:
 
-1. the optical principles, capable of detecting dust particles of 1 micron or more;
-2. two output modes, solve different sensitivity requirements, clean environment Vout outputs a high level signal (4V);
+1. Usa medidas ópticas es capaz de detectar partículas de 1 micra o más
+2. Utiliza dos salidas distintes para distinta sensibilidad
 3. 5 VDC power supply
-4. detecting particles range: up to 8000pcs / 283ml (1um more particles)
+4. Detecta hasta 8000pcs / 283ml
 
-This Dust Sensor gives a good indication of the air quality in an environment by measuring the dust concentration. The Particulate Matter level (PM level) in the air is measured by counting the Low Pulse Occupancy time (LPO time) in given time unit. LPO time is proportional to PM concentration. This sensor can provide reliable data for air purifier systems; it is responsive to PM of diameter 1μm.
+La medición se hace contando el tiempo que las partículas ocupan determinada posición (donde se corta un haz de luz infrarroja) LOW Pulse Occupancy time (LPO time). LPO time es proporcional a la concentración PM.
 
-Note: This sensor uses counting method to measure dust concentration, not weighing method, and the unit is pcs/L or pcs/0.01cf.
+Nota: El sensor usa un método de conteo, no de peso como otros sensores, por tanto la unidad es  pcs/L o pcs/0.01cf.
 
-Note: Please pay attention to the warnings listed here.
 
 ## Pinout
 
@@ -47,36 +44,27 @@ En esta imagen del sensor que vende seeedstudio con su conector Groove queda muc
 ![a](https://statics3.seeedstudio.com/images/product/Dustsensor.jpg)
 
 1. GND
-2. OUTPUT P2
+2. Output P2
 3. Vcc: 5V 90mA
-4. OUTPUT P1
-5. INPUT (T1), threshold for P2
+4. Output P1
+5. Input (T1), threshold for P2
 
 
 ## Forma y cuidados de uso
 
-### ¡¡ NO TOCAR LOS POTENCIÓMETROS!!! YA VIENEN CONFIGURADOS DE FÁBRICA
 
-* Please keep it upright.
-* 3 min preheat time is required while using for the first time.
-* Arbitrary operation may cause unexpected damage.
-* Following widgets (red rectangle marked) is used only for the factory setting. Please DO NOT change the default configuration.
+
+* Mantener el sensor en la posición indicada hacia arriba.
+* Se necesitan 3 minutos de calentamiento antes de la primera medida.
+* ¡¡ NO TOCAR LOS POTENCIÓMETROS!!! YA VIENEN CONFIGURADOS DE FÁBRICA
+
 
 ## Ejemplo de código
 
-Demos
 
-Here is a demo to show how to obtain PM concentration data from this Grove - Dust Sensor.
+1. Conectamos el sensor a la entrada D8
 
-1. Plug the dust sensor into digital port D8 on the Grove - Base Shield. It can only be D8 because the operation of this sensor involves sampling. This function only can be achieved by D8, the input capturing pin of ATmega328P, on Arduino/Seeeduino.
-Also, you can connect Grove - Dust sensor to Arduino UNO without Base Shield:
-Arduino UNO	Dust Sensor
-
-  * 5V	Red wire
-  * GND	Black wire
-  * D8	Yellow wire
-
-2. Copy and paste the demo code below to a new Arduino sketch.
+2. Este es el código del ejemplo
 
         /*
         Grove - Dust Sensor Demo v1.0
@@ -125,11 +113,11 @@ Arduino UNO	Dust Sensor
         }
 
 
-The result above consists of three parts: lowpulseoccupancy, ratio and concentration:
+Obetenemos 3 resultados: lowpulseoccupancy, ratio and concentration:
 
-* "lowpulseoccupancy" represents the Low Pulse Occupancy Time(LPO Time) detected in given 30s. Its unit is microseconds.
-* "ratio" reflects on which level LPO Time takes up the whole sample time.
-* "concentration" is a figure that has a physical meaning. It is calculated from the characteristic graph below by using the LPO time.
+* "lowpulseoccupancy" representa el Low Pulse Occupancy Time(LPO Time) detectado en  30s. Su unidad son los microsegundos.
+* "ratio" refleja en qué nivel LPO Time se llegó al tiempo de espera.
+* "concentration" es una cifra con sentido físico. Se calcula a partir de la gráfica del fabricante para LPO time.
 
 ![Characteristics.jpg ](http://wiki.seeedstudio.com/images/thumb/1/1f/Characteristics.jpg/600px-Characteristics.jpg)
 
@@ -149,3 +137,5 @@ Esencialmente se calienta el aire y se mide la cantidad de partículas que se mu
 * [Wiki sobre el sensor](http://wiki.timelab.org/wiki/PPD42NS)
 * [Datasheet del fabricante](http://wiki.timelab.org/images/f/f9/PPD42NS.pdf)
 * [Proyecto que lo usa](https://hackaday.io/project/11339-particulate-matter-sensor-network)
+* [Otro proyecto que lo usa](http://irq5.io/2013/07/24/testing-the-shinyei-ppd42ns/)
+* [Proyecto con ESP8266](http://arduinoairpollution.altervista.org/progetto/)
