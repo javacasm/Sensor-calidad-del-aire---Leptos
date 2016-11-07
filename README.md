@@ -18,4 +18,6 @@ Mi propuesta es usar un hardware más barato y con conexión wifi directa
 
 La placa NodeMCU tiene una entrada analógica que usaríamos para leer el MQ2, 2 entradas digitales para leer el sensor PPD42 y un I2C o SPI
 
-## [Componentes proyecto Leptos](./Componentes.md)
+## [Componentes proyecto Leptos](./Componentes_Leptos.md)
+
+## [Componentes proyecto con ESP8266](./Componentes_ESP8266.md)
