@@ -111,6 +111,7 @@ The result above consists of three parts: lowpulseoccupancy, ratio and concentra
 
 
 ## Documentación
-[Documentación seeedstudio](http://wiki.seeedstudio.com/wiki/Grove_-_Dust_sensor)
-[DataSheet](http://www.seeedstudio.com/wiki/images/4/4c/Grove_-_Dust_sensor.pdf)
-[Cómo funciona](http://takingspace.org/wp-content/uploads/ShinyeiPPD42NS_Deconstruction_TracyAllen.pdf)
+
+* [Documentación seeedstudio](http://wiki.seeedstudio.com/wiki/Grove_-_Dust_sensor)
+* [DataSheet](http://www.seeedstudio.com/wiki/images/4/4c/Grove_-_Dust_sensor.pdf)
+* [Cómo funciona](http://takingspace.org/wp-content/uploads/ShinyeiPPD42NS_Deconstruction_TracyAllen.pdf)
