@@ -139,3 +139,4 @@ Esencialmente se calienta el aire y se mide la cantidad de partículas que se mu
 * [Proyecto que lo usa](https://hackaday.io/project/11339-particulate-matter-sensor-network)
 * [Otro proyecto que lo usa](http://irq5.io/2013/07/24/testing-the-shinyei-ppd42ns/)
 * [Proyecto con ESP8266](http://arduinoairpollution.altervista.org/progetto/)
+* [Proyecto](http://www.takingspace.org/make-your-own-aircasting-particle-monitor/)
