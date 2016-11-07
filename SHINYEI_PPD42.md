@@ -32,11 +32,35 @@ The main parameters:
 3. 5 VDC power supply
 4. detecting particles range: up to 8000pcs / 283ml (1um more particles)
 
+This Dust Sensor gives a good indication of the air quality in an environment by measuring the dust concentration. The Particulate Matter level (PM level) in the air is measured by counting the Low Pulse Occupancy time (LPO time) in given time unit. LPO time is proportional to PM concentration. This sensor can provide reliable data for air purifier systems; it is responsive to PM of diameter 1μm.
+
+Note: This sensor uses counting method to measure dust concentration, not weighing method, and the unit is pcs/L or pcs/0.01cf.
+
+Note: Please pay attention to the warnings listed here.
+
 ## Pinout
 
-![a](https://imvec.tech/wp-content/uploads/2016/09/LeptosSteps012-1024x768.jpg)
+### ¡¡Cuidado que el cable que traen algunas placas induce a error por los colores!!
 
-# ¡¡ NO TOCAR LOS POTENCIÓMETROS!!! YA VIENEN CONFIGURADOS DE FÁBRICA
+En esta imagen del sensor que vende seeedstudio con su conector Groove queda mucho más claro
+
+![a](https://statics3.seeedstudio.com/images/product/Dustsensor.jpg)
+
+1. GND
+2. OUTPUT P2
+3. Vcc: 5V 90mA
+4. OUTPUT P1
+5. INPUT (T1), threshold for P2
+
+
+## Forma y cuidados de uso
+
+### ¡¡ NO TOCAR LOS POTENCIÓMETROS!!! YA VIENEN CONFIGURADOS DE FÁBRICA
+
+* Please keep it upright.
+* 3 min preheat time is required while using for the first time.
+* Arbitrary operation may cause unexpected damage.
+* Following widgets (red rectangle marked) is used only for the factory setting. Please DO NOT change the default configuration.
 
 ## Ejemplo de código
 
@@ -109,9 +133,19 @@ The result above consists of three parts: lowpulseoccupancy, ratio and concentra
 
 ![Characteristics.jpg ](http://wiki.seeedstudio.com/images/thumb/1/1f/Characteristics.jpg/600px-Characteristics.jpg)
 
+## ¿Cómo funciona?
+
+![inside](http://aqicn.org/aqicn/view/images/sensors/Shinyei-PPD42NS-inside.jpg)
+
+Esencialmente se calienta el aire y se mide la cantidad de partículas que se mueven
+
+![Cómo funciona](http://arduinoairpollution.altervista.org/wp-content/uploads/2016/03/Shinyei-PPD42NS-How-it-works.png)
 
 ## Documentación
 
 * [Documentación seeedstudio](http://wiki.seeedstudio.com/wiki/Grove_-_Dust_sensor)
 * [DataSheet](http://www.seeedstudio.com/wiki/images/4/4c/Grove_-_Dust_sensor.pdf)
 * [Cómo funciona](http://takingspace.org/wp-content/uploads/ShinyeiPPD42NS_Deconstruction_TracyAllen.pdf)
+* [Wiki sobre el sensor](http://wiki.timelab.org/wiki/PPD42NS)
+* [Datasheet del fabricante](http://wiki.timelab.org/images/f/f9/PPD42NS.pdf)
+* [Proyecto que lo usa](https://hackaday.io/project/11339-particulate-matter-sensor-network)
