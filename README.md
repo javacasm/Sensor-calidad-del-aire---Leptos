@@ -21,3 +21,5 @@ La placa NodeMCU tiene una entrada analógica que usaríamos para leer el MQ2, 2
 ## [Componentes proyecto Leptos](./Componentes_Leptos.md)
 
 ## [Componentes proyecto con ESP8266](./Componentes_ESP8266.md)
+
+## [Otro proyecto similar](https://www.instructables.com/id/Air-Pollution-Detector/)
